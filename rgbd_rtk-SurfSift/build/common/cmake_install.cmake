@@ -1,4 +1,4 @@
-# Install script for directory: /home/msrj/Documents/rgbd_rtk/common
+# Install script for directory: /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/common
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,8 +45,8 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     ENDIF()
   ENDFOREACH()
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/msrj/Documents/rgbd_rtk/build/common/lib/librgbd_rtk_common.so.1.0"
-    "/home/msrj/Documents/rgbd_rtk/build/common/lib/librgbd_rtk_common.so"
+    "/home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/common/lib/librgbd_rtk_common.so.1.0"
+    "/home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/common/lib/librgbd_rtk_common.so"
     )
   FOREACH(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librgbd_rtk_common.so.1.0"
@@ -63,8 +63,8 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES
-    "/home/msrj/Documents/rgbd_rtk/common/common_types.h"
-    "/home/msrj/Documents/rgbd_rtk/common/geometry.h"
+    "/home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/common/common_types.h"
+    "/home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/common/geometry.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

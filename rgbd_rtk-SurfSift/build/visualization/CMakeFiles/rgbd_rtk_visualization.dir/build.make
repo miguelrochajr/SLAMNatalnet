@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/msrj/Documents/rgbd_rtk
+CMAKE_SOURCE_DIR = /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/msrj/Documents/rgbd_rtk/build
+CMAKE_BINARY_DIR = /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build
 
 # Include any dependencies generated for this target.
 include visualization/CMakeFiles/rgbd_rtk_visualization.dir/depend.make
@@ -54,17 +54,17 @@ include visualization/CMakeFiles/rgbd_rtk_visualization.dir/flags.make
 
 visualization/CMakeFiles/rgbd_rtk_visualization.dir/reconstruction_visualizer.cpp.o: visualization/CMakeFiles/rgbd_rtk_visualization.dir/flags.make
 visualization/CMakeFiles/rgbd_rtk_visualization.dir/reconstruction_visualizer.cpp.o: ../visualization/reconstruction_visualizer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/msrj/Documents/rgbd_rtk/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object visualization/CMakeFiles/rgbd_rtk_visualization.dir/reconstruction_visualizer.cpp.o"
-	cd /home/msrj/Documents/rgbd_rtk/build/visualization && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/rgbd_rtk_visualization.dir/reconstruction_visualizer.cpp.o -c /home/msrj/Documents/rgbd_rtk/visualization/reconstruction_visualizer.cpp
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/visualization && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/rgbd_rtk_visualization.dir/reconstruction_visualizer.cpp.o -c /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/visualization/reconstruction_visualizer.cpp
 
 visualization/CMakeFiles/rgbd_rtk_visualization.dir/reconstruction_visualizer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgbd_rtk_visualization.dir/reconstruction_visualizer.cpp.i"
-	cd /home/msrj/Documents/rgbd_rtk/build/visualization && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/msrj/Documents/rgbd_rtk/visualization/reconstruction_visualizer.cpp > CMakeFiles/rgbd_rtk_visualization.dir/reconstruction_visualizer.cpp.i
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/visualization && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/visualization/reconstruction_visualizer.cpp > CMakeFiles/rgbd_rtk_visualization.dir/reconstruction_visualizer.cpp.i
 
 visualization/CMakeFiles/rgbd_rtk_visualization.dir/reconstruction_visualizer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgbd_rtk_visualization.dir/reconstruction_visualizer.cpp.s"
-	cd /home/msrj/Documents/rgbd_rtk/build/visualization && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/msrj/Documents/rgbd_rtk/visualization/reconstruction_visualizer.cpp -o CMakeFiles/rgbd_rtk_visualization.dir/reconstruction_visualizer.cpp.s
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/visualization && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/visualization/reconstruction_visualizer.cpp -o CMakeFiles/rgbd_rtk_visualization.dir/reconstruction_visualizer.cpp.s
 
 visualization/CMakeFiles/rgbd_rtk_visualization.dir/reconstruction_visualizer.cpp.o.requires:
 .PHONY : visualization/CMakeFiles/rgbd_rtk_visualization.dir/reconstruction_visualizer.cpp.o.requires
@@ -93,43 +93,137 @@ visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/x86_64-linux-gnu/li
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/x86_64-linux-gnu/libpthread.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_common.so
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libflann_cpp_s.a
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_kdtree.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_octree.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_search.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_sample_consensus.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_filters.so
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_tracking.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libOpenNI.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libOpenNI2.so
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkCommon.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkFiltering.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkImaging.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkGraphics.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkGenericFiltering.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkIO.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkRendering.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkVolumeRendering.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkHybrid.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkWidgets.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkParallel.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkInfovis.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkGeovis.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkViews.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkCharts.so.5.8.0
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkChartsCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonColor-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtksys-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonDataModel-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonMath-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonMisc-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonSystem-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonTransforms-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonExecutionModel-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersGeneral-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonComputationalGeometry-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkInfovisCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersExtraction-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersStatistics-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingFourier-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkalglib-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingContext2D-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersGeometry-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersSources-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingFreeType-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkfreetype-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkzlib-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingMath-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOParallelXML-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOXML-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOXMLParser-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkexpat-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkParallelCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOLegacy-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOVideo-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOExport-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOImage-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkDICOMParser-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkmetaio-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkjpeg-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkpng-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtktiff-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingGL2PSOpenGL2-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingOpenGL2-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkglew-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkgl2ps-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOTecplotTable-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkInteractionWidgets-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersHybrid-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingSources-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersModeling-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingColor-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingGeneral-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingHybrid-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkInteractionStyle-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingAnnotation-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingVolume-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkInfovisLayout-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingLOD-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersHyperTree-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersParallel-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingContextOpenGL2-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOGeometry-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingLabel-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOLSDyna-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOExodus-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkexoIIc-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkNetCDF-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkNetCDF_cxx-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkhdf5_hl-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkhdf5-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOEnSight-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingImage-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOMovie-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkoggtheora-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkproj4-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOSQL-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtksqlite-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersParallelImaging-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersImaging-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersGeneric-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingStatistics-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersPoints-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersProgrammable-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkInteractionImage-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkjsoncpp-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingMorphological-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtklibxml2-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOPLY-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersTexture-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkViewsContext2D-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkViewsCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOImport-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersSMP-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkViewsInfovis-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkDomainsChemistryOpenGL2-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkDomainsChemistry-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkverdict-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOMINC-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersAMR-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersFlowPaths-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOInfovis-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingVolumeOpenGL2-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIONetCDF-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersSelection-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersVerdict-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOParallel-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingStencil-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkGeovisCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOAMR-7.1.so.1
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_io.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_features.so
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_keypoints.so
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/x86_64-linux-gnu/libqhull.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_surface.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_visualization.so
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_stereo.so
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_keypoints.so
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_registration.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_ml.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_segmentation.so
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_registration.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_recognition.so
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_stereo.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_people.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_outofcore.so
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_tracking.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/x86_64-linux-gnu/libboost_system.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/x86_64-linux-gnu/libboost_thread.so
@@ -138,61 +232,216 @@ visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/x86_64-linux-gnu/li
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/x86_64-linux-gnu/libboost_serialization.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/x86_64-linux-gnu/libpthread.so
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/x86_64-linux-gnu/libqhull.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libOpenNI.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libOpenNI2.so
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkCommon.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkFiltering.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkImaging.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkGraphics.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkGenericFiltering.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkIO.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkRendering.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkVolumeRendering.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkHybrid.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkWidgets.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkParallel.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkInfovis.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkGeovis.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkViews.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkCharts.so.5.8.0
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libflann_cpp_s.a
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkChartsCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonColor-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtksys-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonDataModel-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonMath-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonMisc-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonSystem-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonTransforms-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonExecutionModel-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersGeneral-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonComputationalGeometry-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkInfovisCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersExtraction-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersStatistics-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingFourier-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkalglib-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingContext2D-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersGeometry-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersSources-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingFreeType-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkfreetype-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkzlib-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingMath-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOParallelXML-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOXML-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOXMLParser-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkexpat-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkParallelCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOLegacy-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOVideo-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOExport-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOImage-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkDICOMParser-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkmetaio-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkjpeg-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkpng-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtktiff-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingGL2PSOpenGL2-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingOpenGL2-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkglew-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkgl2ps-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOTecplotTable-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkInteractionWidgets-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersHybrid-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingSources-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersModeling-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingColor-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingGeneral-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingHybrid-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkInteractionStyle-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingAnnotation-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingVolume-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkInfovisLayout-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingLOD-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersHyperTree-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersParallel-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingContextOpenGL2-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOGeometry-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingLabel-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOLSDyna-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOExodus-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkexoIIc-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkNetCDF-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkNetCDF_cxx-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkhdf5_hl-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkhdf5-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOEnSight-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingImage-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOMovie-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkoggtheora-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkproj4-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOSQL-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtksqlite-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersParallelImaging-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersImaging-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersGeneric-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingStatistics-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersPoints-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersProgrammable-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkInteractionImage-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkjsoncpp-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingMorphological-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtklibxml2-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOPLY-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersTexture-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkViewsContext2D-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkViewsCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOImport-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersSMP-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkViewsInfovis-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkDomainsChemistryOpenGL2-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkDomainsChemistry-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkverdict-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOMINC-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersAMR-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersFlowPaths-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOInfovis-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingVolumeOpenGL2-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIONetCDF-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersSelection-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersVerdict-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOParallel-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingStencil-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkGeovisCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOAMR-7.1.so.1
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_common.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_kdtree.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_octree.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_search.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_sample_consensus.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_filters.so
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_tracking.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_io.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_features.so
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_keypoints.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_surface.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_visualization.so
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_stereo.so
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_keypoints.so
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_registration.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_ml.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_segmentation.so
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_registration.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_recognition.so
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_stereo.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_people.so
 visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_outofcore.so
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkViews.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkInfovis.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkWidgets.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkVolumeRendering.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkHybrid.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkParallel.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkRendering.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkImaging.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkGraphics.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkIO.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkFiltering.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtkCommon.so.5.8.0
-visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/libvtksys.so.5.8.0
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libpcl_tracking.so
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkChartsCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingContext2D-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingLabel-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersImaging-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtklibxml2-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingMath-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingOpenGL2-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/x86_64-linux-gnu/libSM.so
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/x86_64-linux-gnu/libICE.so
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/x86_64-linux-gnu/libX11.so
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/x86_64-linux-gnu/libXext.so
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/x86_64-linux-gnu/libXt.so
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkglew-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkverdict-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersParallel-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOGeometry-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkexoIIc-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkjsoncpp-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIONetCDF-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkNetCDF_cxx-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkNetCDF-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkInfovisLayout-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkInfovisCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkproj4-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkViewsCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkInteractionWidgets-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersHybrid-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersModeling-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingGeneral-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingSources-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingHybrid-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOImage-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkDICOMParser-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkmetaio-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkpng-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtktiff-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkjpeg-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/lib/x86_64-linux-gnu/libm.so
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkInteractionStyle-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersExtraction-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersStatistics-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingFourier-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkalglib-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingAnnotation-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingFreeType-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkfreetype-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingColor-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingVolume-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkImagingCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkRenderingCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonColor-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersGeometry-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersSources-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersGeneral-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonComputationalGeometry-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkhdf5_hl-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkhdf5-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersAMR-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkFiltersCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOXML-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOXMLParser-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkexpat-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkParallelCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOLegacy-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkIOCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonExecutionModel-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonDataModel-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonTransforms-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonMisc-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonMath-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonSystem-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkCommonCore-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtksys-7.1.so.1
+visualization/lib/librgbd_rtk_visualization.so.1.0: /usr/local/lib/libvtkzlib-7.1.so.1
 visualization/lib/librgbd_rtk_visualization.so.1.0: visualization/CMakeFiles/rgbd_rtk_visualization.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library lib/librgbd_rtk_visualization.so"
-	cd /home/msrj/Documents/rgbd_rtk/build/visualization && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rgbd_rtk_visualization.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/msrj/Documents/rgbd_rtk/build/visualization && $(CMAKE_COMMAND) -E cmake_symlink_library lib/librgbd_rtk_visualization.so.1.0 lib/librgbd_rtk_visualization.so.1.0 lib/librgbd_rtk_visualization.so
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/visualization && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rgbd_rtk_visualization.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/visualization && $(CMAKE_COMMAND) -E cmake_symlink_library lib/librgbd_rtk_visualization.so.1.0 lib/librgbd_rtk_visualization.so.1.0 lib/librgbd_rtk_visualization.so
 
 visualization/lib/librgbd_rtk_visualization.so: visualization/lib/librgbd_rtk_visualization.so.1.0
 
@@ -204,10 +453,10 @@ visualization/CMakeFiles/rgbd_rtk_visualization.dir/requires: visualization/CMak
 .PHONY : visualization/CMakeFiles/rgbd_rtk_visualization.dir/requires
 
 visualization/CMakeFiles/rgbd_rtk_visualization.dir/clean:
-	cd /home/msrj/Documents/rgbd_rtk/build/visualization && $(CMAKE_COMMAND) -P CMakeFiles/rgbd_rtk_visualization.dir/cmake_clean.cmake
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/visualization && $(CMAKE_COMMAND) -P CMakeFiles/rgbd_rtk_visualization.dir/cmake_clean.cmake
 .PHONY : visualization/CMakeFiles/rgbd_rtk_visualization.dir/clean
 
 visualization/CMakeFiles/rgbd_rtk_visualization.dir/depend:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/msrj/Documents/rgbd_rtk /home/msrj/Documents/rgbd_rtk/visualization /home/msrj/Documents/rgbd_rtk/build /home/msrj/Documents/rgbd_rtk/build/visualization /home/msrj/Documents/rgbd_rtk/build/visualization/CMakeFiles/rgbd_rtk_visualization.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/visualization /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/visualization /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/visualization/CMakeFiles/rgbd_rtk_visualization.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : visualization/CMakeFiles/rgbd_rtk_visualization.dir/depend
 

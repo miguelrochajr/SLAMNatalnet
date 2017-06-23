@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/msrj/Documents/rgbd_rtk
+CMAKE_SOURCE_DIR = /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/msrj/Documents/rgbd_rtk/build
+CMAKE_BINARY_DIR = /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -113,14 +113,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/msrj/Documents/rgbd_rtk/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/msrj/Documents/rgbd_rtk/build/CMakeFiles /home/msrj/Documents/rgbd_rtk/build/common/CMakeFiles/progress.marks
-	cd /home/msrj/Documents/rgbd_rtk/build && $(MAKE) -f CMakeFiles/Makefile2 common/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/msrj/Documents/rgbd_rtk/build/CMakeFiles 0
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/CMakeFiles /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/common/CMakeFiles/progress.marks
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(MAKE) -f CMakeFiles/Makefile2 common/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(MAKE) -f CMakeFiles/Makefile2 common/clean
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(MAKE) -f CMakeFiles/Makefile2 common/clean
 .PHONY : clean
 
 # The main clean target
@@ -129,22 +129,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/msrj/Documents/rgbd_rtk/build && $(MAKE) -f CMakeFiles/Makefile2 common/preinstall
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(MAKE) -f CMakeFiles/Makefile2 common/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(MAKE) -f CMakeFiles/Makefile2 common/preinstall
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(MAKE) -f CMakeFiles/Makefile2 common/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 common/CMakeFiles/rgbd_rtk_common.dir/rule:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(MAKE) -f CMakeFiles/Makefile2 common/CMakeFiles/rgbd_rtk_common.dir/rule
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(MAKE) -f CMakeFiles/Makefile2 common/CMakeFiles/rgbd_rtk_common.dir/rule
 .PHONY : common/CMakeFiles/rgbd_rtk_common.dir/rule
 
 # Convenience name for target.
@@ -153,7 +153,7 @@ rgbd_rtk_common: common/CMakeFiles/rgbd_rtk_common.dir/rule
 
 # fast build rule for target.
 rgbd_rtk_common/fast:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(MAKE) -f common/CMakeFiles/rgbd_rtk_common.dir/build.make common/CMakeFiles/rgbd_rtk_common.dir/build
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(MAKE) -f common/CMakeFiles/rgbd_rtk_common.dir/build.make common/CMakeFiles/rgbd_rtk_common.dir/build
 .PHONY : rgbd_rtk_common/fast
 
 geometry.o: geometry.cpp.o
@@ -161,7 +161,7 @@ geometry.o: geometry.cpp.o
 
 # target to build an object file
 geometry.cpp.o:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(MAKE) -f common/CMakeFiles/rgbd_rtk_common.dir/build.make common/CMakeFiles/rgbd_rtk_common.dir/geometry.cpp.o
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(MAKE) -f common/CMakeFiles/rgbd_rtk_common.dir/build.make common/CMakeFiles/rgbd_rtk_common.dir/geometry.cpp.o
 .PHONY : geometry.cpp.o
 
 geometry.i: geometry.cpp.i
@@ -169,7 +169,7 @@ geometry.i: geometry.cpp.i
 
 # target to preprocess a source file
 geometry.cpp.i:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(MAKE) -f common/CMakeFiles/rgbd_rtk_common.dir/build.make common/CMakeFiles/rgbd_rtk_common.dir/geometry.cpp.i
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(MAKE) -f common/CMakeFiles/rgbd_rtk_common.dir/build.make common/CMakeFiles/rgbd_rtk_common.dir/geometry.cpp.i
 .PHONY : geometry.cpp.i
 
 geometry.s: geometry.cpp.s
@@ -177,7 +177,7 @@ geometry.s: geometry.cpp.s
 
 # target to generate assembly for a file
 geometry.cpp.s:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(MAKE) -f common/CMakeFiles/rgbd_rtk_common.dir/build.make common/CMakeFiles/rgbd_rtk_common.dir/geometry.cpp.s
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(MAKE) -f common/CMakeFiles/rgbd_rtk_common.dir/build.make common/CMakeFiles/rgbd_rtk_common.dir/geometry.cpp.s
 .PHONY : geometry.cpp.s
 
 # Help Target
@@ -207,6 +207,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

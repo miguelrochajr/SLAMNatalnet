@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/msrj/Documents/rgbd_rtk/applications/monocular_calibration.cpp
+/home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/applications/monocular_calibration.cpp
 cstdio
 -
 ctime
@@ -86,8 +86,6 @@ string.h
 string.h
 -
 limits.h
--
-stddef.h
 -
 ext/atomicity.h
 -

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/msrj/Documents/rgbd_rtk/io/rgbd_loader.cpp
+/home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/io/rgbd_loader.cpp
 cstdio
 -
 cstdlib
@@ -18,15 +18,15 @@ opencv2/core.hpp
 opencv2/highgui.hpp
 -
 rgbd_loader.h
-/home/msrj/Documents/rgbd_rtk/io/rgbd_loader.h
+/home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/io/rgbd_loader.h
 
-/home/msrj/Documents/rgbd_rtk/io/rgbd_loader.h
+/home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/io/rgbd_loader.h
 vector
 -
 opencv2/core.hpp
 -
 
-/home/msrj/Documents/rgbd_rtk/io/sequence_loader.cpp
+/home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/io/sequence_loader.cpp
 cstdio
 -
 cstdlib
@@ -38,9 +38,9 @@ opencv2/core.hpp
 opencv2/highgui.hpp
 -
 sequence_loader.h
-/home/msrj/Documents/rgbd_rtk/io/sequence_loader.h
+/home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/io/sequence_loader.h
 
-/home/msrj/Documents/rgbd_rtk/io/sequence_loader.h
+/home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/io/sequence_loader.h
 vector
 -
 opencv2/core.hpp
@@ -94,8 +94,6 @@ string.h
 string.h
 -
 limits.h
--
-stddef.h
 -
 ext/atomicity.h
 -

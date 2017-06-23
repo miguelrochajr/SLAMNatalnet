@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/msrj/Documents/rgbd_rtk
+CMAKE_SOURCE_DIR = /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/msrj/Documents/rgbd_rtk/build
+CMAKE_BINARY_DIR = /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build
 
 # Include any dependencies generated for this target.
 include applications/CMakeFiles/monocular_image_grabber.dir/depend.make
@@ -54,17 +54,17 @@ include applications/CMakeFiles/monocular_image_grabber.dir/flags.make
 
 applications/CMakeFiles/monocular_image_grabber.dir/monocular_image_grabber.cpp.o: applications/CMakeFiles/monocular_image_grabber.dir/flags.make
 applications/CMakeFiles/monocular_image_grabber.dir/monocular_image_grabber.cpp.o: ../applications/monocular_image_grabber.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/msrj/Documents/rgbd_rtk/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object applications/CMakeFiles/monocular_image_grabber.dir/monocular_image_grabber.cpp.o"
-	cd /home/msrj/Documents/rgbd_rtk/build/applications && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monocular_image_grabber.dir/monocular_image_grabber.cpp.o -c /home/msrj/Documents/rgbd_rtk/applications/monocular_image_grabber.cpp
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/applications && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monocular_image_grabber.dir/monocular_image_grabber.cpp.o -c /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/applications/monocular_image_grabber.cpp
 
 applications/CMakeFiles/monocular_image_grabber.dir/monocular_image_grabber.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monocular_image_grabber.dir/monocular_image_grabber.cpp.i"
-	cd /home/msrj/Documents/rgbd_rtk/build/applications && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/msrj/Documents/rgbd_rtk/applications/monocular_image_grabber.cpp > CMakeFiles/monocular_image_grabber.dir/monocular_image_grabber.cpp.i
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/applications && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/applications/monocular_image_grabber.cpp > CMakeFiles/monocular_image_grabber.dir/monocular_image_grabber.cpp.i
 
 applications/CMakeFiles/monocular_image_grabber.dir/monocular_image_grabber.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monocular_image_grabber.dir/monocular_image_grabber.cpp.s"
-	cd /home/msrj/Documents/rgbd_rtk/build/applications && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/msrj/Documents/rgbd_rtk/applications/monocular_image_grabber.cpp -o CMakeFiles/monocular_image_grabber.dir/monocular_image_grabber.cpp.s
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/applications && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/applications/monocular_image_grabber.cpp -o CMakeFiles/monocular_image_grabber.dir/monocular_image_grabber.cpp.s
 
 applications/CMakeFiles/monocular_image_grabber.dir/monocular_image_grabber.cpp.o.requires:
 .PHONY : applications/CMakeFiles/monocular_image_grabber.dir/monocular_image_grabber.cpp.o.requires
@@ -84,13 +84,13 @@ monocular_image_grabber_EXTERNAL_OBJECTS =
 
 applications/bin/monocular_image_grabber: applications/CMakeFiles/monocular_image_grabber.dir/monocular_image_grabber.cpp.o
 applications/bin/monocular_image_grabber: applications/CMakeFiles/monocular_image_grabber.dir/build.make
+applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_world.so.2.4.13
 applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_videostab.so.2.4.13
 applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_video.so.2.4.13
 applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_ts.a
 applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_superres.so.2.4.13
 applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_stitching.so.2.4.13
 applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_photo.so.2.4.13
-applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_ocl.so.2.4.13
 applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_objdetect.so.2.4.13
 applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_nonfree.so.2.4.13
 applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_ml.so.2.4.13
@@ -103,8 +103,14 @@ applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_features2d.so
 applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_core.so.2.4.13
 applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_contrib.so.2.4.13
 applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_calib3d.so.2.4.13
+applications/bin/monocular_image_grabber: /usr/lib/x86_64-linux-gnu/libz.so
+applications/bin/monocular_image_grabber: /usr/lib/x86_64-linux-gnu/libjpeg.so
+applications/bin/monocular_image_grabber: /usr/lib/x86_64-linux-gnu/libpng.so
+applications/bin/monocular_image_grabber: /usr/lib/x86_64-linux-gnu/libz.so
+applications/bin/monocular_image_grabber: /usr/lib/x86_64-linux-gnu/libjpeg.so
+applications/bin/monocular_image_grabber: /usr/lib/x86_64-linux-gnu/libpng.so
+applications/bin/monocular_image_grabber: /usr/lib/x86_64-linux-gnu/libtiff.so
 applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_nonfree.so.2.4.13
-applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_ocl.so.2.4.13
 applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_gpu.so.2.4.13
 applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_photo.so.2.4.13
 applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_objdetect.so.2.4.13
@@ -119,7 +125,7 @@ applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_flann.so.2.4.
 applications/bin/monocular_image_grabber: /usr/local/lib/libopencv_core.so.2.4.13
 applications/bin/monocular_image_grabber: applications/CMakeFiles/monocular_image_grabber.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable bin/monocular_image_grabber"
-	cd /home/msrj/Documents/rgbd_rtk/build/applications && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/monocular_image_grabber.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/applications && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/monocular_image_grabber.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 applications/CMakeFiles/monocular_image_grabber.dir/build: applications/bin/monocular_image_grabber
@@ -129,10 +135,10 @@ applications/CMakeFiles/monocular_image_grabber.dir/requires: applications/CMake
 .PHONY : applications/CMakeFiles/monocular_image_grabber.dir/requires
 
 applications/CMakeFiles/monocular_image_grabber.dir/clean:
-	cd /home/msrj/Documents/rgbd_rtk/build/applications && $(CMAKE_COMMAND) -P CMakeFiles/monocular_image_grabber.dir/cmake_clean.cmake
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/applications && $(CMAKE_COMMAND) -P CMakeFiles/monocular_image_grabber.dir/cmake_clean.cmake
 .PHONY : applications/CMakeFiles/monocular_image_grabber.dir/clean
 
 applications/CMakeFiles/monocular_image_grabber.dir/depend:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/msrj/Documents/rgbd_rtk /home/msrj/Documents/rgbd_rtk/applications /home/msrj/Documents/rgbd_rtk/build /home/msrj/Documents/rgbd_rtk/build/applications /home/msrj/Documents/rgbd_rtk/build/applications/CMakeFiles/monocular_image_grabber.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/applications /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/applications /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/applications/CMakeFiles/monocular_image_grabber.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : applications/CMakeFiles/monocular_image_grabber.dir/depend
 

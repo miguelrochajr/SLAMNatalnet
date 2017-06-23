@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/msrj/Documents/rgbd_rtk/applications/rgbd_loader_test.cpp
+/home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/applications/rgbd_loader_test.cpp
 cstdio
 -
 cstdlib
@@ -66,8 +66,6 @@ string.h
 string.h
 -
 limits.h
--
-stddef.h
 -
 ext/atomicity.h
 -

@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/msrj/Documents/rgbd_rtk
+CMAKE_SOURCE_DIR = /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/msrj/Documents/rgbd_rtk/build
+CMAKE_BINARY_DIR = /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build
 
 # Include any dependencies generated for this target.
 include io/CMakeFiles/rgbd_rtk_io.dir/depend.make
@@ -54,17 +54,17 @@ include io/CMakeFiles/rgbd_rtk_io.dir/flags.make
 
 io/CMakeFiles/rgbd_rtk_io.dir/sequence_loader.cpp.o: io/CMakeFiles/rgbd_rtk_io.dir/flags.make
 io/CMakeFiles/rgbd_rtk_io.dir/sequence_loader.cpp.o: ../io/sequence_loader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/msrj/Documents/rgbd_rtk/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object io/CMakeFiles/rgbd_rtk_io.dir/sequence_loader.cpp.o"
-	cd /home/msrj/Documents/rgbd_rtk/build/io && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/rgbd_rtk_io.dir/sequence_loader.cpp.o -c /home/msrj/Documents/rgbd_rtk/io/sequence_loader.cpp
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/io && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/rgbd_rtk_io.dir/sequence_loader.cpp.o -c /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/io/sequence_loader.cpp
 
 io/CMakeFiles/rgbd_rtk_io.dir/sequence_loader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgbd_rtk_io.dir/sequence_loader.cpp.i"
-	cd /home/msrj/Documents/rgbd_rtk/build/io && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/msrj/Documents/rgbd_rtk/io/sequence_loader.cpp > CMakeFiles/rgbd_rtk_io.dir/sequence_loader.cpp.i
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/io && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/io/sequence_loader.cpp > CMakeFiles/rgbd_rtk_io.dir/sequence_loader.cpp.i
 
 io/CMakeFiles/rgbd_rtk_io.dir/sequence_loader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgbd_rtk_io.dir/sequence_loader.cpp.s"
-	cd /home/msrj/Documents/rgbd_rtk/build/io && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/msrj/Documents/rgbd_rtk/io/sequence_loader.cpp -o CMakeFiles/rgbd_rtk_io.dir/sequence_loader.cpp.s
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/io && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/io/sequence_loader.cpp -o CMakeFiles/rgbd_rtk_io.dir/sequence_loader.cpp.s
 
 io/CMakeFiles/rgbd_rtk_io.dir/sequence_loader.cpp.o.requires:
 .PHONY : io/CMakeFiles/rgbd_rtk_io.dir/sequence_loader.cpp.o.requires
@@ -77,17 +77,17 @@ io/CMakeFiles/rgbd_rtk_io.dir/sequence_loader.cpp.o.provides.build: io/CMakeFile
 
 io/CMakeFiles/rgbd_rtk_io.dir/rgbd_loader.cpp.o: io/CMakeFiles/rgbd_rtk_io.dir/flags.make
 io/CMakeFiles/rgbd_rtk_io.dir/rgbd_loader.cpp.o: ../io/rgbd_loader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/msrj/Documents/rgbd_rtk/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object io/CMakeFiles/rgbd_rtk_io.dir/rgbd_loader.cpp.o"
-	cd /home/msrj/Documents/rgbd_rtk/build/io && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/rgbd_rtk_io.dir/rgbd_loader.cpp.o -c /home/msrj/Documents/rgbd_rtk/io/rgbd_loader.cpp
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/io && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/rgbd_rtk_io.dir/rgbd_loader.cpp.o -c /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/io/rgbd_loader.cpp
 
 io/CMakeFiles/rgbd_rtk_io.dir/rgbd_loader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgbd_rtk_io.dir/rgbd_loader.cpp.i"
-	cd /home/msrj/Documents/rgbd_rtk/build/io && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/msrj/Documents/rgbd_rtk/io/rgbd_loader.cpp > CMakeFiles/rgbd_rtk_io.dir/rgbd_loader.cpp.i
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/io && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/io/rgbd_loader.cpp > CMakeFiles/rgbd_rtk_io.dir/rgbd_loader.cpp.i
 
 io/CMakeFiles/rgbd_rtk_io.dir/rgbd_loader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgbd_rtk_io.dir/rgbd_loader.cpp.s"
-	cd /home/msrj/Documents/rgbd_rtk/build/io && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/msrj/Documents/rgbd_rtk/io/rgbd_loader.cpp -o CMakeFiles/rgbd_rtk_io.dir/rgbd_loader.cpp.s
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/io && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/io/rgbd_loader.cpp -o CMakeFiles/rgbd_rtk_io.dir/rgbd_loader.cpp.s
 
 io/CMakeFiles/rgbd_rtk_io.dir/rgbd_loader.cpp.o.requires:
 .PHONY : io/CMakeFiles/rgbd_rtk_io.dir/rgbd_loader.cpp.o.requires
@@ -109,13 +109,13 @@ rgbd_rtk_io_EXTERNAL_OBJECTS =
 io/lib/librgbd_rtk_io.so.1.0: io/CMakeFiles/rgbd_rtk_io.dir/sequence_loader.cpp.o
 io/lib/librgbd_rtk_io.so.1.0: io/CMakeFiles/rgbd_rtk_io.dir/rgbd_loader.cpp.o
 io/lib/librgbd_rtk_io.so.1.0: io/CMakeFiles/rgbd_rtk_io.dir/build.make
+io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_world.so.2.4.13
 io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_videostab.so.2.4.13
 io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_video.so.2.4.13
 io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_ts.a
 io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_superres.so.2.4.13
 io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_stitching.so.2.4.13
 io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_photo.so.2.4.13
-io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_ocl.so.2.4.13
 io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_objdetect.so.2.4.13
 io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_nonfree.so.2.4.13
 io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_ml.so.2.4.13
@@ -128,8 +128,14 @@ io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_features2d.so.2.4.13
 io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_core.so.2.4.13
 io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_contrib.so.2.4.13
 io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_calib3d.so.2.4.13
+io/lib/librgbd_rtk_io.so.1.0: /usr/lib/x86_64-linux-gnu/libz.so
+io/lib/librgbd_rtk_io.so.1.0: /usr/lib/x86_64-linux-gnu/libjpeg.so
+io/lib/librgbd_rtk_io.so.1.0: /usr/lib/x86_64-linux-gnu/libpng.so
+io/lib/librgbd_rtk_io.so.1.0: /usr/lib/x86_64-linux-gnu/libz.so
+io/lib/librgbd_rtk_io.so.1.0: /usr/lib/x86_64-linux-gnu/libjpeg.so
+io/lib/librgbd_rtk_io.so.1.0: /usr/lib/x86_64-linux-gnu/libpng.so
+io/lib/librgbd_rtk_io.so.1.0: /usr/lib/x86_64-linux-gnu/libtiff.so
 io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_nonfree.so.2.4.13
-io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_ocl.so.2.4.13
 io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_gpu.so.2.4.13
 io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_photo.so.2.4.13
 io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_objdetect.so.2.4.13
@@ -144,8 +150,8 @@ io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_flann.so.2.4.13
 io/lib/librgbd_rtk_io.so.1.0: /usr/local/lib/libopencv_core.so.2.4.13
 io/lib/librgbd_rtk_io.so.1.0: io/CMakeFiles/rgbd_rtk_io.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library lib/librgbd_rtk_io.so"
-	cd /home/msrj/Documents/rgbd_rtk/build/io && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rgbd_rtk_io.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/msrj/Documents/rgbd_rtk/build/io && $(CMAKE_COMMAND) -E cmake_symlink_library lib/librgbd_rtk_io.so.1.0 lib/librgbd_rtk_io.so.1.0 lib/librgbd_rtk_io.so
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/io && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rgbd_rtk_io.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/io && $(CMAKE_COMMAND) -E cmake_symlink_library lib/librgbd_rtk_io.so.1.0 lib/librgbd_rtk_io.so.1.0 lib/librgbd_rtk_io.so
 
 io/lib/librgbd_rtk_io.so: io/lib/librgbd_rtk_io.so.1.0
 
@@ -158,10 +164,10 @@ io/CMakeFiles/rgbd_rtk_io.dir/requires: io/CMakeFiles/rgbd_rtk_io.dir/rgbd_loade
 .PHONY : io/CMakeFiles/rgbd_rtk_io.dir/requires
 
 io/CMakeFiles/rgbd_rtk_io.dir/clean:
-	cd /home/msrj/Documents/rgbd_rtk/build/io && $(CMAKE_COMMAND) -P CMakeFiles/rgbd_rtk_io.dir/cmake_clean.cmake
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/io && $(CMAKE_COMMAND) -P CMakeFiles/rgbd_rtk_io.dir/cmake_clean.cmake
 .PHONY : io/CMakeFiles/rgbd_rtk_io.dir/clean
 
 io/CMakeFiles/rgbd_rtk_io.dir/depend:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/msrj/Documents/rgbd_rtk /home/msrj/Documents/rgbd_rtk/io /home/msrj/Documents/rgbd_rtk/build /home/msrj/Documents/rgbd_rtk/build/io /home/msrj/Documents/rgbd_rtk/build/io/CMakeFiles/rgbd_rtk_io.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/io /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/io /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/io/CMakeFiles/rgbd_rtk_io.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : io/CMakeFiles/rgbd_rtk_io.dir/depend
 

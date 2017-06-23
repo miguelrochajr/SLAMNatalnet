@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/msrj/Documents/rgbd_rtk
+CMAKE_SOURCE_DIR = /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/msrj/Documents/rgbd_rtk/build
+CMAKE_BINARY_DIR = /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build
 
 # Include any dependencies generated for this target.
 include applications/CMakeFiles/surf_tracker_test.dir/depend.make
@@ -54,17 +54,17 @@ include applications/CMakeFiles/surf_tracker_test.dir/flags.make
 
 applications/CMakeFiles/surf_tracker_test.dir/surf_tracker_test.cpp.o: applications/CMakeFiles/surf_tracker_test.dir/flags.make
 applications/CMakeFiles/surf_tracker_test.dir/surf_tracker_test.cpp.o: ../applications/surf_tracker_test.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/msrj/Documents/rgbd_rtk/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object applications/CMakeFiles/surf_tracker_test.dir/surf_tracker_test.cpp.o"
-	cd /home/msrj/Documents/rgbd_rtk/build/applications && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/surf_tracker_test.dir/surf_tracker_test.cpp.o -c /home/msrj/Documents/rgbd_rtk/applications/surf_tracker_test.cpp
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/applications && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/surf_tracker_test.dir/surf_tracker_test.cpp.o -c /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/applications/surf_tracker_test.cpp
 
 applications/CMakeFiles/surf_tracker_test.dir/surf_tracker_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/surf_tracker_test.dir/surf_tracker_test.cpp.i"
-	cd /home/msrj/Documents/rgbd_rtk/build/applications && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/msrj/Documents/rgbd_rtk/applications/surf_tracker_test.cpp > CMakeFiles/surf_tracker_test.dir/surf_tracker_test.cpp.i
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/applications && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/applications/surf_tracker_test.cpp > CMakeFiles/surf_tracker_test.dir/surf_tracker_test.cpp.i
 
 applications/CMakeFiles/surf_tracker_test.dir/surf_tracker_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/surf_tracker_test.dir/surf_tracker_test.cpp.s"
-	cd /home/msrj/Documents/rgbd_rtk/build/applications && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/msrj/Documents/rgbd_rtk/applications/surf_tracker_test.cpp -o CMakeFiles/surf_tracker_test.dir/surf_tracker_test.cpp.s
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/applications && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/applications/surf_tracker_test.cpp -o CMakeFiles/surf_tracker_test.dir/surf_tracker_test.cpp.s
 
 applications/CMakeFiles/surf_tracker_test.dir/surf_tracker_test.cpp.o.requires:
 .PHONY : applications/CMakeFiles/surf_tracker_test.dir/surf_tracker_test.cpp.o.requires
@@ -86,13 +86,20 @@ applications/bin/surf_tracker_test: applications/CMakeFiles/surf_tracker_test.di
 applications/bin/surf_tracker_test: applications/CMakeFiles/surf_tracker_test.dir/build.make
 applications/bin/surf_tracker_test: io/lib/librgbd_rtk_io.so.1.0
 applications/bin/surf_tracker_test: tracking/lib/librgbd_rtk_tracking.so.1.0
+applications/bin/surf_tracker_test: /usr/local/lib/libopencv_world.so.2.4.13
+applications/bin/surf_tracker_test: /usr/lib/x86_64-linux-gnu/libz.so
+applications/bin/surf_tracker_test: /usr/lib/x86_64-linux-gnu/libjpeg.so
+applications/bin/surf_tracker_test: /usr/lib/x86_64-linux-gnu/libpng.so
+applications/bin/surf_tracker_test: /usr/lib/x86_64-linux-gnu/libz.so
+applications/bin/surf_tracker_test: /usr/lib/x86_64-linux-gnu/libjpeg.so
+applications/bin/surf_tracker_test: /usr/lib/x86_64-linux-gnu/libpng.so
+applications/bin/surf_tracker_test: /usr/lib/x86_64-linux-gnu/libtiff.so
 applications/bin/surf_tracker_test: /usr/local/lib/libopencv_videostab.so.2.4.13
 applications/bin/surf_tracker_test: /usr/local/lib/libopencv_ts.a
 applications/bin/surf_tracker_test: /usr/local/lib/libopencv_superres.so.2.4.13
 applications/bin/surf_tracker_test: /usr/local/lib/libopencv_stitching.so.2.4.13
 applications/bin/surf_tracker_test: /usr/local/lib/libopencv_contrib.so.2.4.13
 applications/bin/surf_tracker_test: /usr/local/lib/libopencv_nonfree.so.2.4.13
-applications/bin/surf_tracker_test: /usr/local/lib/libopencv_ocl.so.2.4.13
 applications/bin/surf_tracker_test: /usr/local/lib/libopencv_gpu.so.2.4.13
 applications/bin/surf_tracker_test: /usr/local/lib/libopencv_photo.so.2.4.13
 applications/bin/surf_tracker_test: /usr/local/lib/libopencv_objdetect.so.2.4.13
@@ -107,7 +114,7 @@ applications/bin/surf_tracker_test: /usr/local/lib/libopencv_flann.so.2.4.13
 applications/bin/surf_tracker_test: /usr/local/lib/libopencv_core.so.2.4.13
 applications/bin/surf_tracker_test: applications/CMakeFiles/surf_tracker_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable bin/surf_tracker_test"
-	cd /home/msrj/Documents/rgbd_rtk/build/applications && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/surf_tracker_test.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/applications && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/surf_tracker_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 applications/CMakeFiles/surf_tracker_test.dir/build: applications/bin/surf_tracker_test
@@ -117,10 +124,10 @@ applications/CMakeFiles/surf_tracker_test.dir/requires: applications/CMakeFiles/
 .PHONY : applications/CMakeFiles/surf_tracker_test.dir/requires
 
 applications/CMakeFiles/surf_tracker_test.dir/clean:
-	cd /home/msrj/Documents/rgbd_rtk/build/applications && $(CMAKE_COMMAND) -P CMakeFiles/surf_tracker_test.dir/cmake_clean.cmake
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/applications && $(CMAKE_COMMAND) -P CMakeFiles/surf_tracker_test.dir/cmake_clean.cmake
 .PHONY : applications/CMakeFiles/surf_tracker_test.dir/clean
 
 applications/CMakeFiles/surf_tracker_test.dir/depend:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/msrj/Documents/rgbd_rtk /home/msrj/Documents/rgbd_rtk/applications /home/msrj/Documents/rgbd_rtk/build /home/msrj/Documents/rgbd_rtk/build/applications /home/msrj/Documents/rgbd_rtk/build/applications/CMakeFiles/surf_tracker_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/applications /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/applications /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/applications/CMakeFiles/surf_tracker_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : applications/CMakeFiles/surf_tracker_test.dir/depend
 

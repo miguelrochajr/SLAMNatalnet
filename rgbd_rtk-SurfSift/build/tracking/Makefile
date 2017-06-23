@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/msrj/Documents/rgbd_rtk
+CMAKE_SOURCE_DIR = /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/msrj/Documents/rgbd_rtk/build
+CMAKE_BINARY_DIR = /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -113,14 +113,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/msrj/Documents/rgbd_rtk/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/msrj/Documents/rgbd_rtk/build/CMakeFiles /home/msrj/Documents/rgbd_rtk/build/tracking/CMakeFiles/progress.marks
-	cd /home/msrj/Documents/rgbd_rtk/build && $(MAKE) -f CMakeFiles/Makefile2 tracking/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/msrj/Documents/rgbd_rtk/build/CMakeFiles 0
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/CMakeFiles /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/tracking/CMakeFiles/progress.marks
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(MAKE) -f CMakeFiles/Makefile2 tracking/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(MAKE) -f CMakeFiles/Makefile2 tracking/clean
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(MAKE) -f CMakeFiles/Makefile2 tracking/clean
 .PHONY : clean
 
 # The main clean target
@@ -129,22 +129,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/msrj/Documents/rgbd_rtk/build && $(MAKE) -f CMakeFiles/Makefile2 tracking/preinstall
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(MAKE) -f CMakeFiles/Makefile2 tracking/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(MAKE) -f CMakeFiles/Makefile2 tracking/preinstall
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(MAKE) -f CMakeFiles/Makefile2 tracking/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tracking/CMakeFiles/rgbd_rtk_tracking.dir/rule:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(MAKE) -f CMakeFiles/Makefile2 tracking/CMakeFiles/rgbd_rtk_tracking.dir/rule
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(MAKE) -f CMakeFiles/Makefile2 tracking/CMakeFiles/rgbd_rtk_tracking.dir/rule
 .PHONY : tracking/CMakeFiles/rgbd_rtk_tracking.dir/rule
 
 # Convenience name for target.
@@ -153,7 +153,7 @@ rgbd_rtk_tracking: tracking/CMakeFiles/rgbd_rtk_tracking.dir/rule
 
 # fast build rule for target.
 rgbd_rtk_tracking/fast:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(MAKE) -f tracking/CMakeFiles/rgbd_rtk_tracking.dir/build.make tracking/CMakeFiles/rgbd_rtk_tracking.dir/build
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(MAKE) -f tracking/CMakeFiles/rgbd_rtk_tracking.dir/build.make tracking/CMakeFiles/rgbd_rtk_tracking.dir/build
 .PHONY : rgbd_rtk_tracking/fast
 
 klt_tracker.o: klt_tracker.cpp.o
@@ -161,7 +161,7 @@ klt_tracker.o: klt_tracker.cpp.o
 
 # target to build an object file
 klt_tracker.cpp.o:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(MAKE) -f tracking/CMakeFiles/rgbd_rtk_tracking.dir/build.make tracking/CMakeFiles/rgbd_rtk_tracking.dir/klt_tracker.cpp.o
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(MAKE) -f tracking/CMakeFiles/rgbd_rtk_tracking.dir/build.make tracking/CMakeFiles/rgbd_rtk_tracking.dir/klt_tracker.cpp.o
 .PHONY : klt_tracker.cpp.o
 
 klt_tracker.i: klt_tracker.cpp.i
@@ -169,7 +169,7 @@ klt_tracker.i: klt_tracker.cpp.i
 
 # target to preprocess a source file
 klt_tracker.cpp.i:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(MAKE) -f tracking/CMakeFiles/rgbd_rtk_tracking.dir/build.make tracking/CMakeFiles/rgbd_rtk_tracking.dir/klt_tracker.cpp.i
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(MAKE) -f tracking/CMakeFiles/rgbd_rtk_tracking.dir/build.make tracking/CMakeFiles/rgbd_rtk_tracking.dir/klt_tracker.cpp.i
 .PHONY : klt_tracker.cpp.i
 
 klt_tracker.s: klt_tracker.cpp.s
@@ -177,7 +177,7 @@ klt_tracker.s: klt_tracker.cpp.s
 
 # target to generate assembly for a file
 klt_tracker.cpp.s:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(MAKE) -f tracking/CMakeFiles/rgbd_rtk_tracking.dir/build.make tracking/CMakeFiles/rgbd_rtk_tracking.dir/klt_tracker.cpp.s
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(MAKE) -f tracking/CMakeFiles/rgbd_rtk_tracking.dir/build.make tracking/CMakeFiles/rgbd_rtk_tracking.dir/klt_tracker.cpp.s
 .PHONY : klt_tracker.cpp.s
 
 surf_tracker.o: surf_tracker.cpp.o
@@ -185,7 +185,7 @@ surf_tracker.o: surf_tracker.cpp.o
 
 # target to build an object file
 surf_tracker.cpp.o:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(MAKE) -f tracking/CMakeFiles/rgbd_rtk_tracking.dir/build.make tracking/CMakeFiles/rgbd_rtk_tracking.dir/surf_tracker.cpp.o
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(MAKE) -f tracking/CMakeFiles/rgbd_rtk_tracking.dir/build.make tracking/CMakeFiles/rgbd_rtk_tracking.dir/surf_tracker.cpp.o
 .PHONY : surf_tracker.cpp.o
 
 surf_tracker.i: surf_tracker.cpp.i
@@ -193,7 +193,7 @@ surf_tracker.i: surf_tracker.cpp.i
 
 # target to preprocess a source file
 surf_tracker.cpp.i:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(MAKE) -f tracking/CMakeFiles/rgbd_rtk_tracking.dir/build.make tracking/CMakeFiles/rgbd_rtk_tracking.dir/surf_tracker.cpp.i
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(MAKE) -f tracking/CMakeFiles/rgbd_rtk_tracking.dir/build.make tracking/CMakeFiles/rgbd_rtk_tracking.dir/surf_tracker.cpp.i
 .PHONY : surf_tracker.cpp.i
 
 surf_tracker.s: surf_tracker.cpp.s
@@ -201,7 +201,7 @@ surf_tracker.s: surf_tracker.cpp.s
 
 # target to generate assembly for a file
 surf_tracker.cpp.s:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(MAKE) -f tracking/CMakeFiles/rgbd_rtk_tracking.dir/build.make tracking/CMakeFiles/rgbd_rtk_tracking.dir/surf_tracker.cpp.s
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(MAKE) -f tracking/CMakeFiles/rgbd_rtk_tracking.dir/build.make tracking/CMakeFiles/rgbd_rtk_tracking.dir/surf_tracker.cpp.s
 .PHONY : surf_tracker.cpp.s
 
 # Help Target
@@ -234,6 +234,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/msrj/Documents/rgbd_rtk/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

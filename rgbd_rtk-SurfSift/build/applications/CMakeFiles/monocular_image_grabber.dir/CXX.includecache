@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/msrj/Documents/rgbd_rtk/applications/monocular_image_grabber.cpp
+/home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/applications/monocular_image_grabber.cpp
 vector
 -
 iostream
@@ -72,8 +72,6 @@ string.h
 string.h
 -
 limits.h
--
-stddef.h
 -
 ext/atomicity.h
 -

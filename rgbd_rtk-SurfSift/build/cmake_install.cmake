@@ -1,4 +1,4 @@
-# Install script for directory: /home/msrj/Documents/rgbd_rtk
+# Install script for directory: /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,12 +34,12 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/msrj/Documents/rgbd_rtk/build/io/cmake_install.cmake")
-  INCLUDE("/home/msrj/Documents/rgbd_rtk/build/tracking/cmake_install.cmake")
-  INCLUDE("/home/msrj/Documents/rgbd_rtk/build/common/cmake_install.cmake")
-  INCLUDE("/home/msrj/Documents/rgbd_rtk/build/visualization/cmake_install.cmake")
-  INCLUDE("/home/msrj/Documents/rgbd_rtk/build/motion_estimation/cmake_install.cmake")
-  INCLUDE("/home/msrj/Documents/rgbd_rtk/build/applications/cmake_install.cmake")
+  INCLUDE("/home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/io/cmake_install.cmake")
+  INCLUDE("/home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/tracking/cmake_install.cmake")
+  INCLUDE("/home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/common/cmake_install.cmake")
+  INCLUDE("/home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/visualization/cmake_install.cmake")
+  INCLUDE("/home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/motion_estimation/cmake_install.cmake")
+  INCLUDE("/home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/applications/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
@@ -49,7 +49,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/msrj/Documents/rgbd_rtk/build/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/msrj/Documents/rgbd_rtk/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)
