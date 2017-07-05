@@ -1,4 +1,4 @@
-/* 
+/*
  *  Software License Agreement (BSD License)
  *
  *  Copyright (c) 2016, Natalnet Laboratory for Perceptual Robotics
@@ -11,10 +11,10 @@
  *
  *  2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and
  *     the following disclaimer in the documentation and/or other materials provided with the distribution.
- * 
+ *
  *  3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or
  *     promote products derived from this software without specific prior written permission.
- * 
+ *
  *  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, *  INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
  *  DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
  *  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
@@ -24,11 +24,22 @@
  *
  */
 
+#include <iostream>
 #include <cstdio>
 #include <cstdlib>
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
+
+
+#include <opencv/cv.h>
+#include <opencv/highgui.h>
+#include <opencv2/video.hpp>
+#include "opencv2/core/core.hpp"
+#include "opencv2/nonfree/features2d.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
+
+
 
 #include <rgbd_loader.h>
 #include <klt_tracker.h>
@@ -36,6 +47,8 @@
 
 using namespace std;
 using namespace cv;
+
+void rastreia(vector<Mat> frames, Mat &img_matches);
 
 void draw_last_track(Mat& img, const vector<Point2f> prev_pts, const vector<Point2f> curr_pts)
 {
@@ -76,9 +89,9 @@ void draw_tracks(Mat& img, const vector<Tracklet> tracklets)
 
 int main(int argc, char **argv)
 {
+	cout << "COMEÇOU!\n";
 	string index_file_name;
 	RGBDLoader loader;
-	KLTTracker tracker;
 
 	Mat frame, depth;
 
@@ -91,17 +104,29 @@ int main(int argc, char **argv)
 	index_file_name = argv[1];
 	loader.processFile(index_file_name);
 
+
+	bool teste = false;
+	vector<Mat> frames;
+	Mat img_matches;
+
 	//Track points on each image
 	for(int i = 0; i < loader.num_images_; i++)
 	{
 		loader.getNextImage(frame, depth);
+		frames.push_back(frame);
 
-		tracker.track(frame);
-		
-		draw_last_track(frame, tracker.prev_pts_, tracker.curr_pts_);
+		cout << "TESTE: " << frames.size() << endl;
+		if(frames.size()<=1){
+			continue;
+		}
+		cout << "JOSUE\n";
+		rastreia(frames, img_matches);
+
+
+		//draw_last_track(frame, tracker.prev_pts_, tracker.curr_pts_);
 		//draw_tracks(frame, tracker.tracklets_);
 
-		imshow("Image view", frame);
+		imshow("SURF", img_matches);
 		imshow("Depth view", depth);
 		char key = waitKey(15);
 		if(key == 27 || key == 'q' || key == 'Q')
@@ -112,4 +137,40 @@ int main(int argc, char **argv)
 	}
 
 	return 0;
+}
+
+
+void rastreia(vector<Mat> frames, Mat &img_matches){
+	cout << "111111\n";
+	int i = frames.size();
+	Mat img_1, img_2, img_ref, img_keypoints_1, img_keypoints_2;
+	int minHessian = 400;
+
+
+	SurfFeatureDetector detector( minHessian );
+	SurfDescriptorExtractor extractor;
+
+	cout << "222222\n";
+
+	vector <KeyPoint> keypoints_1, keypoints_2;
+	Mat descriptors_1, descriptors_2;
+
+	detector.detect(frames[i-2], keypoints_1);
+	extractor.compute(frames[i-2], keypoints_1, descriptors_1);
+	cout << "333333\n";
+
+	detector.detect(frames[i-1], keypoints_2);
+	extractor.compute(frames[i-1], keypoints_2, descriptors_2);
+
+	BFMatcher matcher(NORM_L2);
+	vector<DMatch> matches;
+	cout << "444444\n";
+
+	matcher.match(descriptors_1, descriptors_2, matches);
+
+
+	drawKeypoints(frames[i-2], keypoints_1, img_1);
+	drawKeypoints(frames[i-1], keypoints_2, img_2);
+
+	drawMatches(img_1, keypoints_1, img_2, keypoints_2, matches, img_matches);
 }

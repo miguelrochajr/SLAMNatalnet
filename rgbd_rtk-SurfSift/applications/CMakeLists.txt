@@ -36,5 +36,5 @@ install(TARGETS monocular_calibration
                 rgbd_loader_test
                 klt_tracker_test
                 motion_estimator_test
-								surf_tracker_test
+		surf_tracker_test
         RUNTIME DESTINATION bin)

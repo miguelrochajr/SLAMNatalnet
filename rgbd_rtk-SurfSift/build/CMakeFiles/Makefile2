@@ -336,8 +336,8 @@ applications/preinstall:
 # Target rules for target applications/CMakeFiles/klt_tracker_test.dir
 
 # All Build rule for target.
-applications/CMakeFiles/klt_tracker_test.dir/all: tracking/CMakeFiles/rgbd_rtk_tracking.dir/all
 applications/CMakeFiles/klt_tracker_test.dir/all: io/CMakeFiles/rgbd_rtk_io.dir/all
+applications/CMakeFiles/klt_tracker_test.dir/all: tracking/CMakeFiles/rgbd_rtk_tracking.dir/all
 	$(MAKE) -f applications/CMakeFiles/klt_tracker_test.dir/build.make applications/CMakeFiles/klt_tracker_test.dir/depend
 	$(MAKE) -f applications/CMakeFiles/klt_tracker_test.dir/build.make applications/CMakeFiles/klt_tracker_test.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/CMakeFiles  1
@@ -442,11 +442,11 @@ clean: applications/CMakeFiles/monocular_image_grabber.dir/clean
 # Target rules for target applications/CMakeFiles/motion_estimator_test.dir
 
 # All Build rule for target.
-applications/CMakeFiles/motion_estimator_test.dir/all: tracking/CMakeFiles/rgbd_rtk_tracking.dir/all
 applications/CMakeFiles/motion_estimator_test.dir/all: io/CMakeFiles/rgbd_rtk_io.dir/all
 applications/CMakeFiles/motion_estimator_test.dir/all: visualization/CMakeFiles/rgbd_rtk_visualization.dir/all
-applications/CMakeFiles/motion_estimator_test.dir/all: common/CMakeFiles/rgbd_rtk_common.dir/all
 applications/CMakeFiles/motion_estimator_test.dir/all: motion_estimation/CMakeFiles/rgbd_rtk_motion_estimation.dir/all
+applications/CMakeFiles/motion_estimator_test.dir/all: tracking/CMakeFiles/rgbd_rtk_tracking.dir/all
+applications/CMakeFiles/motion_estimator_test.dir/all: common/CMakeFiles/rgbd_rtk_common.dir/all
 	$(MAKE) -f applications/CMakeFiles/motion_estimator_test.dir/build.make applications/CMakeFiles/motion_estimator_test.dir/depend
 	$(MAKE) -f applications/CMakeFiles/motion_estimator_test.dir/build.make applications/CMakeFiles/motion_estimator_test.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/CMakeFiles  4
@@ -551,8 +551,8 @@ clean: applications/CMakeFiles/sequence_loader_test.dir/clean
 # Target rules for target applications/CMakeFiles/surf_tracker_test.dir
 
 # All Build rule for target.
-applications/CMakeFiles/surf_tracker_test.dir/all: tracking/CMakeFiles/rgbd_rtk_tracking.dir/all
 applications/CMakeFiles/surf_tracker_test.dir/all: io/CMakeFiles/rgbd_rtk_io.dir/all
+applications/CMakeFiles/surf_tracker_test.dir/all: tracking/CMakeFiles/rgbd_rtk_tracking.dir/all
 	$(MAKE) -f applications/CMakeFiles/surf_tracker_test.dir/build.make applications/CMakeFiles/surf_tracker_test.dir/depend
 	$(MAKE) -f applications/CMakeFiles/surf_tracker_test.dir/build.make applications/CMakeFiles/surf_tracker_test.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/josuearaujo/Documentos/Josué/SLAM/SLAMNatalnet/rgbd_rtk-SurfSift/build/CMakeFiles  14
