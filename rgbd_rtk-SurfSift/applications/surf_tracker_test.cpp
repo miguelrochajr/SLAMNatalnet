@@ -48,7 +48,7 @@
 using namespace std;
 using namespace cv;
 
-void rastreia(vector<Mat> frames, Mat &img_matches);
+void rastreia(vector<Mat> frames, Mat &img_matches, vector< vector<int> > &historico_rastro, vector< vector<Point> > &rastros);
 
 void draw_last_track(Mat& img, const vector<Point2f> prev_pts, const vector<Point2f> curr_pts)
 {
@@ -89,7 +89,6 @@ void draw_tracks(Mat& img, const vector<Tracklet> tracklets)
 
 int main(int argc, char **argv)
 {
-	cout << "COMEÇOU!\n";
 	string index_file_name;
 	RGBDLoader loader;
 
@@ -104,73 +103,137 @@ int main(int argc, char **argv)
 	index_file_name = argv[1];
 	loader.processFile(index_file_name);
 
-
 	bool teste = false;
 	vector<Mat> frames;
 	Mat img_matches;
 
+	loader.getNextImage(frame, depth);
+	frames.push_back(frame);
+
+	vector< vector<int> > historico_rastro(frame.cols, vector<int>(frame.rows, -1));
+  vector< vector<Point> > rastros;
+
 	//Track points on each image
 	for(int i = 0; i < loader.num_images_; i++)
 	{
-		loader.getNextImage(frame, depth);
-		frames.push_back(frame);
-
-		cout << "TESTE: " << frames.size() << endl;
 		if(frames.size()<=1){
+			loader.getNextImage(frame, depth);
+			frames.push_back(frame);
+
 			continue;
 		}
-		cout << "JOSUE\n";
-		rastreia(frames, img_matches);
 
+		rastreia(frames, img_matches, historico_rastro, rastros);
 
 		//draw_last_track(frame, tracker.prev_pts_, tracker.curr_pts_);
 		//draw_tracks(frame, tracker.tracklets_);
 
 		imshow("SURF", img_matches);
 		imshow("Depth view", depth);
+		waitKey(0);
 		char key = waitKey(15);
 		if(key == 27 || key == 'q' || key == 'Q')
 		{
 			printf("Exiting.\n");
 			break;
 		}
+
+		loader.getNextImage(frame, depth);
+		frames.push_back(frame);
+
 	}
 
 	return 0;
 }
 
 
-void rastreia(vector<Mat> frames, Mat &img_matches){
-	cout << "111111\n";
+void rastreia(vector<Mat> frames, Mat &img_matches, vector< vector<int> > &historico_rastro, vector< vector<Point> > &rastros){
 	int i = frames.size();
 	Mat img_1, img_2, img_ref, img_keypoints_1, img_keypoints_2;
-	int minHessian = 400;
+	int minHessian = 1000;
 
 
 	SurfFeatureDetector detector( minHessian );
 	SurfDescriptorExtractor extractor;
-
-	cout << "222222\n";
 
 	vector <KeyPoint> keypoints_1, keypoints_2;
 	Mat descriptors_1, descriptors_2;
 
 	detector.detect(frames[i-2], keypoints_1);
 	extractor.compute(frames[i-2], keypoints_1, descriptors_1);
-	cout << "333333\n";
 
 	detector.detect(frames[i-1], keypoints_2);
 	extractor.compute(frames[i-1], keypoints_2, descriptors_2);
 
 	BFMatcher matcher(NORM_L2);
 	vector<DMatch> matches;
-	cout << "444444\n";
 
-	matcher.match(descriptors_1, descriptors_2, matches);
+	matcher.match(descriptors_2, descriptors_1, matches);
 
 
 	drawKeypoints(frames[i-2], keypoints_1, img_1);
 	drawKeypoints(frames[i-1], keypoints_2, img_2);
 
-	drawMatches(img_1, keypoints_1, img_2, keypoints_2, matches, img_matches);
+	//drawMatches(img_1, keypoints_1, img_2, keypoints_2, matches, img_matches);
+	Mat copia;
+	img_2.copyTo(copia);  // copia = img2.clone()
+
+	int i2, i1;
+	for(int i=0; i<matches.size(); i++){
+		if(i%10!=0){
+			continue;
+		}
+		//circle(copia, keypoints_2[i].pt, 2, CV_RGB(0, 0, 255));
+		i2 = matches[i].queryIdx;
+		i1 = matches[i].trainIdx;
+		circle(copia, keypoints_2[i2].pt, 2, CV_RGB(0, 0, 255));
+		line(copia, keypoints_2[i2].pt, keypoints_1[i1].pt, CV_RGB(0, 255, 0));
+
+	}
+
+	img_matches = copia.clone();
+
+
+	Point p1, p2;
+	vector< vector<int> > aux;
+	aux = historico_rastro;
+
+  for(int i=0; i<matches.size(); i++){
+		if(i%10!=0){
+			continue;
+		}
+		i2 = matches[i].queryIdx;
+		i1 = matches[i].trainIdx;
+
+		p2 = keypoints_2[i2].pt;
+		p1 = keypoints_1[i1].pt;
+
+
+		if(historico_rastro[p1.x][p1.y] == -1){
+			rastros.push_back(vector<Point>());
+			(*(rastros.end()-1)).push_back(p1);
+			(*(rastros.end()-1)).push_back(p2);
+			aux[p2.x][p2.y] = rastros.size()-1;
+		}
+		else{
+			rastros[historico_rastro[p1.x][p1.y]].push_back(p2);
+			aux[p2.x][p2.y] = historico_rastro[p1.x][p1.y];
+			aux[p1.x][p1.y] = -1;
+		}
+
+	}
+
+	historico_rastro = aux;
+
+	int somador = 0;
+	for(int i = 0; i < historico_rastro.size(); i++){
+		for(int j = 0; j < historico_rastro[0].size(); j++){
+			if(historico_rastro[i][j] != -1){
+				somador++;
+				cout << rastros[historico_rastro[i][j]].size() << endl;
+			}
+		}
+	}
+
+	cout << endl << endl << "separacao" << endl << endl;
 }
